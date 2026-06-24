@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Orange Tail Virtual Airline</title>
+  <title>Who We Are | Orange Tail Virtual Airline</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
@@ -35,7 +35,6 @@
       width: 100%;
       z-index: 1000;
       background: rgba(12, 40, 80, 0.96);
-      backdrop-filter: blur(10px);
       box-shadow: 0 6px 25px rgba(0,0,0,0.25);
     }
 
@@ -114,120 +113,98 @@
       display: flex;
     }
 
-    .hero {
-      height: 100vh;
+    .page-hero {
+      min-height: 55vh;
       background:
-        linear-gradient(to right, rgba(7,24,47,0.50), rgba(12,40,80,0.35)),
+        linear-gradient(to right, rgba(12,40,80,0.50), rgba(12,40,80,0.25)),
         url("https://live.staticflickr.com/65535/55353444102_3f7e5cef21_h.jpg?s=eyJpIjo1NTM1MzQ0NDEwMiwiZSI6MTc4MjMwMTY5NSwicyI6IjlhMjY4ZTIyMzRiMGUzMmEwMTU3NTEwYTc4MzI5NTY1NDdjOTBlMTkiLCJ2IjoxfQ") center/cover no-repeat;
       display: flex;
       align-items: center;
-      padding: 120px 70px 40px;
-    }
-
-    .hero-content {
-      max-width: 720px;
+      padding: 140px 70px 60px;
       color: var(--white);
     }
 
-    .hero-content h1 {
+    .page-hero-content {
+      max-width: 850px;
+    }
+
+    .page-hero h1 {
       font-family: "Cinzel", serif;
-      font-size: clamp(42px, 6vw, 82px);
-      line-height: 1.05;
-      margin-bottom: 24px;
+      font-size: clamp(42px, 5vw, 70px);
+      margin-bottom: 18px;
       letter-spacing: 2px;
     }
 
-    .hero-content h1 span {
-      color: var(--orange);
-    }
-
-    .hero-content p {
+    .page-hero p {
       font-size: 20px;
       line-height: 1.7;
       color: #e8edf5;
-      margin-bottom: 36px;
-      max-width: 620px;
+      max-width: 760px;
     }
 
-    .hero-buttons {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      text-decoration: none;
-      padding: 15px 28px;
-      border-radius: 4px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      transition: 0.3s;
-    }
-
-    .btn-primary {
-      background: var(--orange);
-      color: var(--white);
-    }
-
-    .btn-primary:hover {
-      background: #d96510;
-    }
-
-    .btn-secondary {
-      border: 2px solid var(--white);
-      color: var(--white);
-    }
-
-    .btn-secondary:hover {
+    .content-section {
+      padding: 90px 70px;
       background: var(--white);
-      color: var(--navy);
     }
 
-    .intro {
-      padding: 90px 60px;
-      background: var(--white);
-      text-align: center;
-    }
-
-    .intro h2 {
-      font-family: "Cinzel", serif;
-      color: var(--navy);
-      font-size: 38px;
-      margin-bottom: 20px;
-    }
-
-    .intro p {
-      max-width: 900px;
+    .content-wrap {
+      max-width: 1100px;
       margin: auto;
+    }
+
+    .content-wrap h2 {
+      font-family: "Cinzel", serif;
+      font-size: 38px;
+      color: var(--navy);
+      margin-bottom: 25px;
+    }
+
+    .content-wrap p {
       font-size: 18px;
-      line-height: 1.8;
+      line-height: 1.9;
       color: #35445a;
+      margin-bottom: 24px;
     }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-      padding: 70px 60px;
+    .highlight-box {
+      margin-top: 45px;
+      padding: 40px;
       background: var(--light);
-    }
-
-    .card {
-      background: var(--white);
-      padding: 38px;
-      border-top: 5px solid var(--orange);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      border-left: 6px solid var(--orange);
       border-radius: 8px;
     }
 
-    .card h3 {
+    .highlight-box h3 {
       font-family: "Cinzel", serif;
       color: var(--navy);
-      margin-bottom: 14px;
-      font-size: 24px;
+      font-size: 28px;
+      margin-bottom: 18px;
     }
 
-    .card p {
+    .values {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      padding: 70px;
+      background: var(--light);
+    }
+
+    .value-card {
+      background: var(--white);
+      padding: 36px;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      border-top: 5px solid var(--orange);
+    }
+
+    .value-card h3 {
+      font-family: "Cinzel", serif;
+      color: var(--navy);
+      font-size: 23px;
+      margin-bottom: 14px;
+    }
+
+    .value-card p {
       line-height: 1.7;
       color: #46566e;
     }
@@ -249,11 +226,15 @@
         gap: 16px;
       }
 
-      .hero {
-        padding: 120px 30px 40px;
+      .page-hero {
+        padding: 130px 30px 50px;
       }
 
-      .cards {
+      .content-section {
+        padding: 60px 30px;
+      }
+
+      .values {
         grid-template-columns: 1fr;
         padding: 50px 30px;
       }
@@ -274,7 +255,7 @@
         <li>
           <a href="#">About Us</a>
           <div class="dropdown">
-            <a href="about.html">Who We Are</a>
+            <a href="who-we-are.html">Who We Are</a>
             <a href="the-ceo.html">The CEO</a>
             <a href="board-of-directors.html">Board Of Directors</a>
           </div>
@@ -288,49 +269,74 @@
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>Welcome to <span>Orange Tail</span></h1>
+<section class="page-hero">
+  <div class="page-hero-content">
+    <h1>Who We Are</h1>
     <p>
-      A premium virtual airline built on professionalism, style, operational realism,
-      and a passion for aviation excellence.
+      Orange Tail Virtual Airline is built for pilots who believe virtual aviation
+      should feel professional, realistic, stylish, and meaningful.
+    </p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="content-wrap">
+    <h2>About Orange Tail Virtual Airline</h2>
+
+    <p>
+      Orange Tail Virtual Airline was created with one clear purpose: to offer a
+      professional and immersive virtual airline experience for flight simulation
+      pilots who value realism, quality, and pride in every operation.
     </p>
 
-    <div class="hero-buttons">
-      <a href="join-us.html" class="btn btn-primary">Join The Airline</a>
-      <a href="fleet.html" class="btn btn-secondary">View Our Fleet</a>
+    <p>
+      We are not just a name on a schedule. We are a virtual airline built around
+      strong branding, carefully planned routes, a respected fleet, and a clear
+      standard of professionalism. From short regional flights to long-haul
+      international operations, every Orange Tail flight is part of a larger
+      aviation experience.
+    </p>
+
+    <p>
+      Our airline combines the visual identity of a modern carrier with the
+      structure and discipline expected from serious flight simulation. We believe
+      that a virtual airline should look good, operate properly, and give its
+      pilots a reason to be proud of the aircraft they fly.
+    </p>
+
+    <div class="highlight-box">
+      <h3>Our Mission</h3>
+      <p>
+        To create a premium virtual airline environment where pilots can fly with
+        purpose, professionalism, and enjoyment — while representing a brand that
+        looks and feels like a real-world airline.
+      </p>
     </div>
   </div>
 </section>
 
-<section class="intro">
-  <h2>A Virtual Airline With Real Standards</h2>
-  <p>
-    Orange Tail Virtual Airline is designed for pilots who want more than just flying.
-    We focus on quality operations, beautiful aircraft, realistic routes, professional
-    presentation, and a community that respects aviation.
-  </p>
-</section>
-
-<section class="cards">
-  <div class="card">
-    <h3>Professional Operations</h3>
+<section class="values">
+  <div class="value-card">
+    <h3>Professionalism</h3>
     <p>
-      Structured routes, realistic fleet planning, and a serious approach to virtual airline flying.
+      We aim to maintain high standards in our operations, presentation, pilot conduct,
+      and overall airline identity.
     </p>
   </div>
 
-  <div class="card">
-    <h3>Premium Fleet</h3>
+  <div class="value-card">
+    <h3>Realism</h3>
     <p>
-      A carefully selected fleet designed for short-haul, medium-haul, and long-haul operations.
+      Our routes, fleet choices, and operational structure are designed to give pilots
+      a believable and enjoyable airline experience.
     </p>
   </div>
 
-  <div class="card">
-    <h3>Pilot Community</h3>
+  <div class="value-card">
+    <h3>Pride</h3>
     <p>
-      A home for dedicated sim pilots who want to fly with purpose, quality, and pride.
+      Orange Tail is built to be an airline pilots are proud to represent every time
+      they connect to the network and take to the skies.
     </p>
   </div>
 </section>
